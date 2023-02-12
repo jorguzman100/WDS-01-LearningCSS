@@ -1,0 +1,22 @@
+header h1 {
+  text-align: center;
+}
+
+.odd-section {
+  background-color: green;
+  color: white;
+}
+
+li:first-child {
+  color: aqua;
+}
+
+section:nth-child(2) li:nth-child(5) {
+  text-decoration: line-through;
+}
+
+h2 {
+  font-family: Arial;
+}
+
+/*# sourceMappingURL=style.css.map */

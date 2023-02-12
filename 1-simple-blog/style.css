@@ -1,0 +1,19 @@
+header,
+footer {
+  background-color: purple;
+  color: white;
+  text-align: center;
+}
+
+main .article-title {
+  font-family: Arial, Helvetica, sans-serif;
+}
+main .article-date,
+main .article-autor {
+  color: gray;
+}
+main .article-date {
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style.css.map */

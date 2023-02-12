@@ -1,0 +1,25 @@
+// Variables
+$bg-c: green;
+$txt-c: white;
+$li-1st-c: aqua;
+
+header h1 {
+    text-align: center;
+}
+
+.odd-section {
+    background-color: $bg-c;
+    color: $txt-c;
+}
+
+li:first-child {
+    color: $li-1st-c;
+}
+
+section:nth-child(2) li:nth-child(5) {
+    text-decoration: line-through;
+}
+
+h2 {
+    font-family: Arial;
+}

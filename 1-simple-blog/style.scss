@@ -1,0 +1,29 @@
+$bg-color: purple;
+$text-color: white;
+
+@mixin purpleWhite($bg-c: blue, $txt-c:lightgray) {
+    background-color: $bg-c;
+    color: $txt-c;
+    text-align: center;
+}
+
+header, 
+footer {
+    @include purpleWhite($bg-color, $text-color);
+}
+
+
+main {
+    .article-title {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .article-date,
+    .article-autor {
+        color: gray;
+    }
+
+    .article-date {
+        font-style: italic;
+    }
+}

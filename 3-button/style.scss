@@ -1,0 +1,89 @@
+// Reset
+* {
+    box-sizing: border-box;
+}
+
+// Variables
+
+$default-bg-c: hsl(0, 0%, 90%);
+$default-bdr-c: hsl(0, 0%, 80%);
+$default-sdw-c: hsl(0, 0%, 70%);
+$default-txt-c: hsl(0, 0%, 0%);
+
+$primary-bg-c:hsl(271, 70%, 50%);
+$primary-bdr-c:hsl(271, 70%, 40%);
+$primary-sdw-c:hsl(271, 70%, 30%);
+$primary-txt-c:hsl(0, 0%, 100%);
+
+$accent-bg-c:hsl(200, 100%, 40%);
+$accent-bdr-c:hsl(200, 100%, 30%);
+$accent-sdw-c:hsl(200, 100%, 20%);
+$accent-txt-c:hsl(0, 0%, 100%);
+
+$danger-bg-c:hsl(0, 60%, 50%);
+$danger-bdr-c:hsl(0, 60%, 40%);
+$danger-sdw-c:hsl(0, 60%, 30%);
+$danger-txt-c:hsl(0, 0%, 100%);
+
+$custom-bg-c: linear-gradient(to right, $primary-bg-c, $accent-bg-c);
+$custom-bdr-c: linear-gradient(to right, $primary-bdr-c, $accent-bdr-c);
+$custom-sdw-c: linear-gradient(to right, $primary-sdw-c, $accent-sdw-c);
+$custom-txt-c:hsl(0, 0%, 100%);
+
+
+// Mxins
+@mixin btn-specific($bg-c: $default-bg-c, $bdr-c: $default-bdr-c, $sdw-c: $default-sdw-c, $txt-c: $default-txt-c) {
+    background: $bg-c;
+    border: 1px solid $bdr-c;
+    color: $txt-c;
+    &:hover,
+    &:focus {
+        background: $bdr-c;
+        box-shadow: 0 0 5px 0 $sdw-c;
+    }
+}
+
+.btn {
+    outline: none;
+    cursor: pointer;
+    padding: .5em 1em;
+    border-radius: .3em;
+}
+
+.btn,
+.btn.btn-default {
+    @extend .btn;
+    @include btn-specific();
+}
+
+.btn.btn-primary {
+    @extend .btn;
+    @include btn-specific($primary-bg-c, $primary-bdr-c, $primary-sdw-c, $primary-txt-c);
+}
+
+.btn.btn-accent {
+    @extend .btn;
+    @include btn-specific($accent-bg-c, $accent-bdr-c, $accent-sdw-c, $accent-txt-c);
+}
+
+.btn.btn-danger {
+    @extend .btn;
+    @include btn-specific($danger-bg-c, $danger-bdr-c, $danger-sdw-c, $danger-txt-c);
+}
+
+.btn.btn-large {
+    font-size: 1.25rem;
+}
+
+.btn.btn-small {
+    font-size: .75rem;
+}
+
+.btn.btn-pill {
+    border-radius: 100px;
+}
+
+.btn.btn-custom {
+    @extend .btn;
+    @include btn-specific($custom-bg-c, $custom-bdr-c, $custom-sdw-c, $custom-txt-c);
+}

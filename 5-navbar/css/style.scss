@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 20%);
+}
+
+.navbar {
+    padding: 1rem 2rem;
+    background-color: hsla(133, 94%, 50%, 0.5);
+    color: hsl(0, 0%, 75%);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    a,
+    a:default {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .brandnameH1 {
+        font-size: 3rem;
+    }
+
+    .menuUl {
+       
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        .navItemLi {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+
+            &:hover, &:focus {
+                background-color: hsla(133, 94%, 50%, 0.1);
+                box-shadow: 0 0 5px 0 hsla(133, 94%, 90%, 0.5);
+            }
+        }
+    }
+}

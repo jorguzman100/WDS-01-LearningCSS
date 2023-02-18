@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0deg, 0%, 20%);
+}
+
+.navbar {
+  padding: 1rem 2rem;
+  background-color: hsla(133deg, 94%, 50%, 0.5);
+  color: hsl(0deg, 0%, 75%);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.navbar a,
+.navbar a:default {
+  text-decoration: none;
+  color: inherit;
+}
+.navbar .brandnameH1 {
+  font-size: 3rem;
+}
+.navbar .menuUl {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar .menuUl .navItemLi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.navbar .menuUl .navItemLi:hover, .navbar .menuUl .navItemLi:focus {
+  background-color: hsla(133deg, 94%, 50%, 0.1);
+  box-shadow: 0 0 5px 0 hsla(133deg, 94%, 90%, 0.5);
+}
+
+/*# sourceMappingURL=style.css.map */

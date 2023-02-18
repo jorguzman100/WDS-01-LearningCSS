@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+.input, .input:disabled, .input.input-small, .input.input-large, .input.input-error, .input.input-success,
+.input.input-default {
+  border-radius: 0.2em;
+  padding: 0.5em 1em;
+  margin: 0.25rem;
+}
+.input:focus {
+  outline: none;
+}
+
+.input, .input:disabled, .input.input-small, .input.input-large, .input.input-error, .input.input-success,
+.input.input-default {
+  border: 1px solid hsl(0deg, 0%, 80%);
+  color: hsl(0deg, 0%, 30%);
+}
+.input:focus,
+.input.input-default:focus {
+  box-shadow: 0 0 5px 0 hsl(0deg, 0%, 70%);
+}
+
+.input.input-success {
+  border: 1px solid hsl(150deg, 100%, 30%);
+  color: hsl(150deg, 100%, 20%);
+}
+.input.input-success:focus {
+  box-shadow: 0 0 5px 0 hsl(150deg, 100%, 70%);
+}
+
+.input.input-error {
+  border: 1px solid hsl(25deg, 90%, 30%);
+  color: hsl(25deg, 90%, 20%);
+}
+.input.input-error:focus {
+  box-shadow: 0 0 5px 0 hsl(25deg, 90%, 70%);
+}
+
+.input.input-large {
+  font-size: 1.25rem;
+}
+
+.input.input-small {
+  font-size: 0.75rem;
+}
+
+.input:disabled {
+  background: hsl(0deg, 0%, 90%);
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,70 @@
+// Reset
+* {
+    box-sizing: border-box;
+}
+
+// Variables
+$default-bdr-c: hsl(0, 0%, 80%);
+$default-txt-c: hsl(0, 0%, 30%);
+$default-sdw-c: hsl(0, 0%, 70%);
+
+$success-bdr-c: hsl(150, 100%, 30%);
+$success-txt-c: hsl(150, 100%, 20%);
+$success-sdw-c: hsl(150, 100%, 70%);
+
+$error-bdr-c: hsl(25, 90%, 30%);
+$error-txt-c: hsl(25, 90%, 20%);
+$error-sdw-c: hsl(25, 90%, 70%);
+
+
+
+// Mixins
+@mixin specific-input($bdr-c: $default-bdr-c, $txt-c: $default-txt-c, $sdw-c: $default-sdw-c) {
+    border: 1px solid $bdr-c;
+    color: $txt-c;
+    &:focus {
+        box-shadow: 0 0 5px 0 $sdw-c;
+    }
+}
+
+// Styles
+
+.input {
+    border-radius: 0.2em;
+    padding: 0.5em 1em;
+    margin: 0.25rem;
+    &:focus {
+        outline: none;
+    }
+}
+
+.input,
+.input.input-default {
+    @extend .input;
+    @include specific-input();
+}
+
+.input.input-success {
+    @extend .input;
+    @include specific-input($success-bdr-c, $success-txt-c, $success-sdw-c);
+}
+
+.input.input-error {
+    @extend .input;
+    @include specific-input($error-bdr-c, $error-txt-c, $error-sdw-c);
+}
+
+.input.input-large {
+    @extend .input;
+    font-size: 1.25rem;
+}
+
+.input.input-small {
+    @extend .input;
+    font-size: .75rem;
+}
+
+.input:disabled {
+    @extend .input;
+    background: hsl(0, 0%, 90%);;
+}

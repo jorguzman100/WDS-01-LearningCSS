@@ -1,0 +1,118 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+/* Remove default list styles */
+a,
+button {
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Remove default border */
+img,
+iframe,
+embed,
+object,
+video {
+  border: 0;
+}
+
+/* Remove outline on focused elements */
+:focus {
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas: "header header" "nav aside" "main aside" "footer footer";
+}
+body header {
+  background-color: hsl(202deg, 100%, 32%);
+  color: white;
+  text-align: center;
+  grid-area: header;
+  font-size: 3rem;
+  padding: 2rem;
+}
+body nav {
+  background-color: hsl(202deg, 100%, 32%);
+  color: white;
+  text-align: center;
+  grid-area: nav;
+  padding: 1rem;
+  border-top: 2px solid hsl(202deg, 100%, 15%);
+}
+body nav ul {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+body nav ul li {
+  padding: 0px 2rem;
+}
+body aside {
+  grid-area: aside;
+  padding: 15px;
+  background-color: hsl(212deg, 100%, 15%);
+  color: white;
+  font-size: 1.25rem;
+}
+body main {
+  grid-area: main;
+}
+body main article h2 {
+  margin: 1rem;
+  font-size: 2.5rem;
+}
+body main article p {
+  margin: 1rem;
+  line-height: 1.5;
+  font-size: 1.25rem;
+}
+body footer {
+  background-color: hsl(202deg, 100%, 32%);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+  grid-area: footer;
+}
+
+/*# sourceMappingURL=style.css.map */

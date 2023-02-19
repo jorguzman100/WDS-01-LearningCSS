@@ -1,0 +1,57 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+/* Remove default list styles */
+a,
+button {
+  text-decoration: none;
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Remove default border */
+img,
+iframe,
+embed,
+object,
+video {
+  border: 0;
+}
+
+/* Remove outline on focused elements */
+:focus {
+  outline: none;
+}

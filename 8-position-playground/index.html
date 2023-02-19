@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Position Property Playground</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>CSS Position Property Playground</h1>
+	<div class="wrapper">
+		<div class="box" id="box1">box1</div>
+		<div class="box" id="box2">box2</div>
+		<div class="box" id="box3">box3</div>
+	</div>
+
+	<form>
+		<label for="position">Position:</label>
+		<select id="position" onchange="setPosition(this.value)">
+			<option value="static">static</option>
+			<option value="relative">relative</option>
+			<option value="absolute">absolute</option>
+			<option value="fixed">fixed</option>
+		</select>
+		<label for="top">Top:</label>
+		<input type="number" id="top" oninput="setTop(this.value)">
+		<label for="right">Right:</label>
+		<input type="number" id="right" oninput="setRight(this.value)">
+		<label for="bottom">Bottom:</label>
+		<input type="number" id="bottom" oninput="setBottom(this.value)">
+		<label for="left">Left:</label>
+		<input type="number" id="left" oninput="setLeft(this.value)">
+	</form>
+
+	<script src="script.js"></script>
+</body>
+</html>

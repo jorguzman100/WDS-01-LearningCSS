@@ -1,0 +1,56 @@
+.wrapper {
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: 50px auto;
+	border: 1px solid black;
+}
+
+.box {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: #008CBA;
+	border: 2px solid #004C7E;
+}
+
+#box1 {
+	top: 50px;
+	left: 50px;
+}
+
+#box2 {
+	top: 100px;
+	left: 100px;
+}
+
+#box3 {
+	top: 150px;
+	left: 150px;
+}
+
+form {
+	margin-top: 20px;
+}
+
+label, select, input {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 5px;
+}
+
+select, input {
+	width: 70px;
+}
+
+input[type="number"] {
+	padding: 3px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+input[type="number"]:focus {
+	outline: none;
+	border-color: #008CBA;
+	box-shadow: 0 0 3px #008CBA;
+}
